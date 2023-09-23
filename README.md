@@ -1,4 +1,4 @@
-# LeetCodeJourney
+# [LeetCodeJourney](https://leetcode.com/Raincwail/)
 A collection of problem from LeetCode solved by me.
 
 # Note:

@@ -6,7 +6,7 @@ using namespace std;
 
 class Solution {
 public:
-    char findTheDifference(string s, string t) {
+    char findTheDifference_map(string s, string t) {
         unordered_map<char, int> mp;
         for (const auto& el: s)
             mp[el]++;
@@ -16,6 +16,14 @@ public:
                 return el;
         
         return -1;
+    }
+
+    char findTheDifference(string s, string t) {
+        char ans = 0;        
+        for (int i = 0; i < s.size(); ++i)
+            ans += t[i] - s[i];
+        ans += t[t.size() - 1];
+        return ans;
     }
 };
 
